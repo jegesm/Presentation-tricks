@@ -5,14 +5,11 @@ from IPython.display import display
 from IPython.display import Markdown as md
 import warnings
 warnings.filterwarnings('ignore')
-import sys
-sys.path.append('/home/jegesm/files_for_report_generation/git')
-from utils import *
 
-display(HTML(\"<style>.container { width:90% !important; }</style>\"))
-    "di.display_html('<script>jQuery(function() {if (jQuery(\"body.notebook_app\").length == 0) { jQuery(\".input_area\").toggle(); jQuery(\".prompt\").toggle();}});</script>', raw=True)
+display(HTML("<style>.container { width:90% !important; }</style>"))
+di.display_html('<script>jQuery(function() {if (jQuery("body.notebook_app").length == 0) { jQuery(".input_area").toggle(); jQuery(".prompt").toggle();}});</script>', raw=True)
 
-HTML(\"\"\"
+HTML("""
 <style>
 .output_png {
     display: table-cell;
@@ -20,4 +17,6 @@ HTML(\"\"\"
     vertical-align: middle;
     "}
     "</style>
+    """
+    )
 ```
