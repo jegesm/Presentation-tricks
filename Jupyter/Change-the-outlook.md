@@ -12,3 +12,8 @@ into a code cell and run it.
 If we have slides and we want to increase the size of the fonts we do:
 ```display(HTML("<style>.rendered_html { font-size: 150% !important; }</style>")) ```
 
+``` 
+from IPython.core.display import display, HTML
+display(HTML("<style>.container { width:100% !important; }</style>"))
+
+```
